@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="calibre">Розмір</string>
+    <string name="s1">Гриби</string>
+    <string name="s2">Сирний соус</string>
+    <string name="s2.2">Гострий соус</string>
+    <string name="s3">Помідори</string>
+    <string name="s4">Кукурудза</string>
+    <string name="s5">Маслини</string>
+    <string name="s6">Ананаси</string>
+    <string name="s7">Курка</string>
+    <string name="s8">Свинина</string>
+    <string name="s9">Мисливські ковбаси</string>
+    <string name="s10">Салямі</string>
+    <string name="s11">Моцарела</string>
+    <string name="s12">Пармезан</string>
+    <string name="s13">Болгарський перець</string>
+    <string name="s14">Італійські трави</string>
+</resources>

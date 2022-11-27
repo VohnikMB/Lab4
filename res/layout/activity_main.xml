@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/prise"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroupPizza4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroupPizza4"
+        app:layout_constraintTop_toTopOf="@+id/radioGroupPizza4"
+        tools:ignore="SmallSp,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="92dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/pizza6"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintTop_toTopOf="@+id/imageButton5"
+        tools:ignore="SmallSp,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="72dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/pizza3"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroupPizza4"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="@+id/imageButton4" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="101dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:contentDescription="@string/pizzaName"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton5"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:srcCompat="@mipmap/ic_launcher4_foreground"
+        tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck"
+        tools:srcCompat="@mipmap/ic_launcher4_foreground" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="106dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="63dp"
+        android:background="@color/white"
+        android:contentDescription="@string/pizzaName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:srcCompat="@mipmap/ic_launcher5_foreground"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@mipmap/ic_launcher5_foreground" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="1dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/prise"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroupPizza3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroupPizza3"
+        app:layout_constraintTop_toTopOf="@+id/radioGroupPizza3"
+        tools:ignore="SmallSp,TextContrastCheck" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPizza1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/radioButtonO"
+            android:layout_width="26dp"
+            android:layout_height="25dp"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="@string/_0"
+            android:textColor="#00838F"
+            android:textSize="0sp"
+            tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck,UsingOnClickInXml,TextContrastCheck" />
+
+        <RadioButton
+            android:id="@+id/radioButtonS"
+            android:layout_width="27dp"
+            android:layout_height="25dp"
+            android:onClick="checkButton"
+            android:text="@string/_59"
+            android:textSize="0sp"
+            tools:ignore="TouchTargetSizeCheck,UsingOnClickInXml" />
+
+        <RadioButton
+            android:id="@+id/radioButtonM"
+            android:layout_width="27dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:onClick="checkButton"
+            android:text="@string/_120"
+            android:textSize="0sp"
+            tools:ignore="TouchTargetSizeCheck,UsingOnClickInXml" />
+
+        <RadioButton
+            android:id="@+id/radioButtonL"
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:layout_weight="0"
+            android:onClick="checkButton"
+            android:text="@string/_180"
+            android:textSize="0sp"
+            tools:ignore="TouchTargetSizeCheck,UsingOnClickInXml,DuplicateClickableBoundsCheck,DuplicateSpeakableTextCheck" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/creator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="106dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:contentDescription="@string/pizzaName"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@mipmap/ic_launcher_foreground" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="101dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:contentDescription="@string/pizzaName"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:srcCompat="@mipmap/ic_launcher2_foreground"
+        tools:srcCompat="@mipmap/ic_launcher2_foreground" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="105dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:contentDescription="@string/pizzaName"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:srcCompat="@mipmap/ic_launcher3_foreground"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@mipmap/ic_launcher3_foreground" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="2dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/prise"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroupPizza1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroupPizza1"
+        app:layout_constraintTop_toTopOf="@+id/radioGroupPizza1"
+        tools:ignore="SmallSp,TextContrastCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="1dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/prise"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroupPizza2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/radioGroupPizza2"
+        app:layout_constraintTop_toTopOf="@+id/radioGroupPizza2"
+        tools:ignore="SmallSp,TextContrastCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/pizza1"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroupPizza1"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="88dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/pizza7"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroupPizza2"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="@+id/imageButton2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPizza3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8">
+
+        <RadioButton
+            android:id="@+id/radioButton3.O"
+            android:layout_width="26dp"
+            android:layout_height="25dp"
+            android:checked="true"
+            android:onClick="checkButton3"
+            android:text="@string/_0"
+            android:textSize="0sp"
+            tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck,UsingOnClickInXml,TextContrastCheck,TextContrastCheck" />
+
+        <RadioButton
+            android:id="@+id/radioButton3.S"
+            android:layout_width="27dp"
+            android:layout_height="25dp"
+            android:onClick="checkButton3"
+            android:text="@string/_75"
+            android:textSize="0sp"
+            tools:ignore="TouchTargetSizeCheck,UsingOnClickInXml" />
+
+        <RadioButton
+            android:id="@+id/radioButton3.M"
+            android:layout_width="27dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:onClick="checkButton3"
+            android:text="@string/_129"
+            android:textSize="0sp"
+            tools:ignore="TouchTargetSizeCheck,UsingOnClickInXml" />
+
+        <RadioButton
+            android:id="@+id/radioButton3.L"
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:layout_weight="0"
+            android:onClick="checkButton3"
+            android:text="@string/_175"
+            android:textSize="0sp"
+            tools:ignore="TouchTargetSizeCheck,UsingOnClickInXml,DuplicateClickableBoundsCheck" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="68dp"
+        android:layout_height="39dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/pizza2"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroupPizza3"
+        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:layout_constraintTop_toTopOf="@+id/imageButton3" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPizza2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/textView7"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7">
+
+        <RadioButton
+            android:id="@+id/radioButton2.O"
+            android:layout_width="26dp"
+            android:layout_height="25dp"
+            android:checked="true"
+            android:onClick="checkButton2"
+            android:text="@string/_0"
+            android:textSize="0sp"
+            tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck,UsingOnClickInXml,TextContrastCheck" />
+
+        <RadioButton
+            android:id="@+id/radioButton2.S"
+            android:layout_width="27dp"
+            android:layout_height="25dp"
+            android:onClick="checkButton2"
+            android:text="@string/_65"
+            android:textSize="0sp"
+            tools:ignore="TouchTargetSizeCheck,UsingOnClickInXml" />
+
+        <RadioButton
+            android:id="@+id/radioButton2.M"
+            android:layout_width="27dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:onClick="checkButton2"
+            android:text="@string/_135"
+            android:textSize="0sp"
+            tools:ignore="TouchTargetSizeCheck,UsingOnClickInXml" />
+
+        <RadioButton
+            android:id="@+id/radioButton2.L"
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:layout_weight="0"
+            android:onClick="checkButton2"
+            android:text="@string/_200"
+            android:textSize="0sp"
+            tools:ignore="TouchTargetSizeCheck,UsingOnClickInXml,DuplicateSpeakableTextCheck" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/size0"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupPizza1"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/sizeS"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupPizza1"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/sizeM"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupPizza1"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/sizeL"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupPizza1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPizza4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9">
+
+        <RadioButton
+            android:id="@+id/radioButton4.O"
+            android:layout_width="26dp"
+            android:layout_height="25dp"
+            android:checked="true"
+            android:onClick="checkButton4"
+            android:text="@string/_0"
+            android:textSize="0sp"
+            tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck,UsingOnClickInXml,TextContrastCheck" />
+
+        <RadioButton
+            android:id="@+id/radioButton4.S"
+            android:layout_width="27dp"
+            android:layout_height="25dp"
+            android:onClick="checkButton4"
+            android:text="@string/_85"
+            android:textSize="0sp"
+            tools:ignore="TouchTargetSizeCheck,UsingOnClickInXml" />
+
+        <RadioButton
+            android:id="@+id/radioButton4.M"
+            android:layout_width="27dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:onClick="checkButton4"
+            android:text="@string/_180"
+            android:textSize="0sp"
+            tools:ignore="TouchTargetSizeCheck,UsingOnClickInXml" />
+
+        <RadioButton
+            android:id="@+id/radioButton4.L"
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:layout_weight="0"
+            android:onClick="checkButton4"
+            android:text="@string/_200"
+            android:textSize="0sp"
+            tools:ignore="TouchTargetSizeCheck,UsingOnClickInXml,DuplicateClickableBoundsCheck" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

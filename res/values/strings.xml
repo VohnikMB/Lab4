@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Lab 4</string>
+    <string name="button_text">Старт</string>
+    <string name="name">Назва: </string>
+    <string name="creator">Масняк Б. IT-11 сп</string>
+    <string name="fullName">ПІБ</string>
+    <string name="address">Адреса</string>
+    <string name="pizzaName">Pizza Name</string>
+    <string name="pizza1">Піца з мисливською ковбасою</string>
+    <string name="pizza2">Піца з грибами</string>
+    <string name="pizza3">Піца з креветками</string>
+    <string name="pizza6">Кастомна піца</string>
+    <string name="pizza7">Вегетеріанська піца</string>
+    <string name="order">Оформлення замовлення</string>
+
+    <string name="prise">0 грн.</string>
+
+    <string name="size0">0</string>
+    <string name="sizeS">S</string>
+    <string name="sizeM">M</string>
+    <string name="sizeL">L</string>
+
+    <string name="_0">0</string>
+    <string name="_59">59</string>
+    <string name="_120">120</string>
+    <string name="_180">180</string>
+    <string name="_80">80</string>
+    <string name="_65">65</string>
+    <string name="_135">135</string>
+    <string name="_200">200</string>
+    <string name="_75">75</string>
+    <string name="_129">129</string>
+    <string name="_175">175</string>
+    <string name="_85">85</string>
+
+    <string name="ingredient">Індігрієнти:</string>
+    <string name="prise_">Ціна:</string>
+    <string name="_380">+380</string>
+    <string name="back">Назад</string>
+    <string name="buy">Купити</string>
+    <string name="sps">Дякуємо за замовлення!</string>
+    <string name="ch_">Чек:</string>
+    <string name="_11">11</string>
+    <string name="_15">15</string>
+    <string name="_9">9</string>
+    <string name="_5">5</string>
+    <string name="_7">7</string>
+    <string name="_10">10</string>
+    <string name="_6">6</string>
+    <string name="_8">8</string>
+    <string name="_20">20</string>
+    <string name="_25">25</string>
+    <string name="_35">35</string>
+    <string name="_30">30</string>
+    <string name="_18">18</string>
+    <string name="_13">13</string>
+    <string name="_12">12</string>
+    <string name="_4">4</string>
+    <string name="_14">14</string>
+    <string name="_16">16</string>
+
+
+</resources>
